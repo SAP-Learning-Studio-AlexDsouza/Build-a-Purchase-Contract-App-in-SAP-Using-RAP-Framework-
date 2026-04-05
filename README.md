@@ -1,6 +1,3 @@
-Build a Purchase Contract App in SAP Using RAP Framework | Full Walkthrough 
-
-
 # 📄 Build a Purchase Contract App in SAP Using RAP Framework
 
 > A complete, production-style **Custom Fiori App** built using the **ABAP RESTful Application Programming (RAP) Framework** — covering database tables, CDS interface views, projection views, metadata extensions, and service definition.
