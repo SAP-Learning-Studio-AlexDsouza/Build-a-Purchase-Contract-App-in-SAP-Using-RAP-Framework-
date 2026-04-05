@@ -1,0 +1,28 @@
+@Metadata.layer: #CORE
+@UI: {  headerInfo: { typeName      : 'Purchase Contract',
+                      typeNamePlural: 'Purchase Contract',
+             title: { type          :#STANDARD,
+                      value         : 'ContractId' }
+                      } }
+annotate view ZC_SLS_PCA_HDR with
+{
+  @UI.facet: [
+    { id   : 'General', purpose: #STANDARD, type   : #IDENTIFICATION_REFERENCE, label  : 'General Information', position: 10 },
+    { id   : 'Items', purpose: #STANDARD, type: #LINEITEM_REFERENCE, label: 'Contract Items', position: 20, targetElement: '_item' }
+    ]
+
+  @UI:{ selectionField: [{ position: 10 }], lineItem: [{ position: 10 }], identification:[{ position: 10, label:'Contract ID' }] }
+  ContractId;
+
+  @UI:{ selectionField: [{ position: 20 }], lineItem: [{ position: 20 }], identification:[{ position: 20, label:'Contract Date' }] }
+  ContractDate;
+
+  @UI:{ selectionField: [{ position: 30 }], lineItem: [{ position: 30 }], identification:[{ position: 30, label:'Supplier Name' }] }
+  SupplierName;
+
+  @UI:{ selectionField: [{ position: 40 }], lineItem: [{ position: 40 }], identification:[{ position: 40, label:'Total Value' }] }
+  TotalValue;
+
+  @UI:{ selectionField: [{ position: 50 }], lineItem: [{ position: 50 }], identification:[{ position: 50, label:'Currency' }] }
+  Currency;
+}
