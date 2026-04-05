@@ -300,4 +300,4 @@ After creating this, create a **Service Binding** in ADT:
 
 ## ⭐ Support
 
-If this helped you — please **star this repo** and **subscribe** to the YouTube channel for more SAP tutorials!
+If this helped you please **star this repo** and **subscribe** to the YouTube channel for more SAP tutorials!
