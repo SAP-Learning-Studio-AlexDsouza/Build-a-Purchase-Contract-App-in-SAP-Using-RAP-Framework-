@@ -1,0 +1,22 @@
+@Metadata.layer: #CORE
+annotate view ZC_SLS_PCA_ITEM with
+{
+  @UI.facet: [{ id       : 'ItemGeneral',
+                purpose  : #STANDARD,
+                type     : #IDENTIFICATION_REFERENCE,
+                label    : 'Item Details',
+                position : 10 }
+  ]
+  @UI:{ selectionField: [{ position: 10 }], lineItem: [{ position: 10 }], identification:[{ position: 10, label:'Item No' }] }
+  ItemNo;
+  @UI:{ lineItem: [{ position: 20 }],identification:[{ position: 20, label:'Material ID' }] }
+  MaterialId;
+  @UI:{ lineItem: [{ position: 30 }],identification:[{ position: 30, label:'Quantity' }] }
+  Quantity;
+  @UI:{ lineItem: [{ position: 40 }],identification:[{ position: 40, label:'Unit' }] }
+  Unit;
+  @UI:{ lineItem: [{ position: 50 }],identification:[{ position: 50, label: 'Net Value' }] }
+  NetValue;
+  @UI:{ lineItem: [{ position: 60 }],identification:[{ position: 60, label:'Currency' }] }
+  Currency;
+}
